@@ -1,12 +1,75 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	--primary-500-color: hsl(160, 100%, 30%);
+	--secondary-500-color: hsl(45, 100%, 50%);
+	--secondary-400-color: hsl(45, 100%, 40%);
+	--neutral-600-color: hsl(0, 0%, 0%);
+	--neutral-500-color: hsl(0, 0%, 10%);
+	--neutral-400-color: hsl(0, 0%, 30%);
+	--neutral-300-color: hsl(0, 0%, 40%);
+	--neutral-200-color: hsl(0, 0%, 60%);
+	--neutral-100-color: hsl(0, 0%, 100%);
 }
 
 /* Add styles here! */
+.max-width-wrapper {
+	margin: auto;
+	max-width: 1000px;
+}
+
+header {
+	margin-top: 96px;
+	margin-bottom: 64px;
+}
+
+.title {
+	margin-bottom: 48px;
+}
+
+.intro-chunk {
+	max-width: 370px;
+}
+
+strong {
+	color: var(--primary-500-color);
+}
+
+main {
+	background-color: var(--neutral-300-color);
+	border-top: 8px solid var(--neutral-200-color);
+	height: max-content;
+	padding: 64px 0;
+}
+
+.card {
+	background-color: var(--neutral-100-color);
+	border-bottom: 8px solid var(--neutral-200-color);
+	padding: 8px 0;
+}
+
+h1,
+h2,
+p {
+	margin: 24px;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.indented-heading {
+	background-color: var(--secondary-500-color);
+	border-bottom: 8px solid var(--secondary-400-color);
+	margin-left: -8px;
+	padding: 16px 32px;
+	width: fit-content;
+	margin-top: 0px;
+}
